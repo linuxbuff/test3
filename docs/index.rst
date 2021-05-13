@@ -43,6 +43,7 @@ Contents:
 
    install
    procedures
+   legacy/legacy-install
 
 
 
