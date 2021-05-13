@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# test2 documentation build configuration file, created by
+# test3 documentation build configuration file, created by
 # sphinx-quickstart on Wed May 12 15:16:26 2021.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,8 +40,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'test2'
-copyright = u'2021, test2'
+project = u'test3'
+copyright = u'2021, test3'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -164,7 +164,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'test2doc'
+htmlhelp_basename = 'test3doc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -183,8 +183,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'test2.tex', u'test2 Documentation',
-   u'test2', 'manual'),
+  ('index', 'test3.tex', u'test3 Documentation',
+   u'test3', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -213,8 +213,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'test2', u'test2 Documentation',
-     [u'test2'], 1)
+    ('index', 'test3', u'test3 Documentation',
+     [u'test3'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -227,8 +227,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'test2', u'test2 Documentation',
-   u'test2', 'test2', 'One line description of project.',
+  ('index', 'test3', u'test3 Documentation',
+   u'test3', 'test3', 'One line description of project.',
    'Miscellaneous'),
 ]
 
