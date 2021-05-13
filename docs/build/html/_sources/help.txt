@@ -1,4 +1,0 @@
-Help
-====
-
-Sample test project
