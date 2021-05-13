@@ -7,9 +7,21 @@ Header2
 
 Sample text
 
-    print 'hello'
-    >> hello
 
+.. code-block:: JSON
+
+  {
+    "key": "value"
+  }
+
+.. code-block:: python
+
+  pygments_style = 'sphinx'
+
+
+.. code-block:: ruby
+
+  print "Hello, World!\n"
 
 
 Guide
