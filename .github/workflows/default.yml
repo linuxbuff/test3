@@ -47,6 +47,7 @@ jobs:
 
       - name: push changes
         run: |
+          cd docs 
           git status
           cd ..
           git config --local user.email "action@github.com"
