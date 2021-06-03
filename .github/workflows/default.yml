@@ -45,6 +45,16 @@ jobs:
           sphinx-build -b html -d ../../test3/doctrees   . ../../test3/html
 
 
+      - name: build pdf
+        run: |
+          apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra 
+          cd docs
+          make latexpdf
+          
+
+        
+        
+
       - name: push changes
         run: |
           git config --local user.email "action@github.com"
