@@ -1,4 +1,4 @@
-name: linuxbuff-build-rtd-pages-and-pdf
+name: CI
 
 # Loosely based on https://github.com/ammaraskar/sphinx-action-test
 
