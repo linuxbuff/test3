@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: linuxbuff/test3@master
+    - uses: linuxbuff/test3@main
       with:
         docs-folder: "docs/"
 
