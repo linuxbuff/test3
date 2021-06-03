@@ -36,8 +36,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      - name: Install Deps
-        run: pip3 install sphinx sphinx_rtd_theme
+#     - name: Install Deps
+#       run: pip3 install sphinx sphinx_rtd_theme
 
 
       - name: install dependencies
@@ -47,7 +47,7 @@ jobs:
           python -m pip install sphinx_rtd_theme
           python -m pip install sphinx-click
           python -m pip list
-          pip3 install sphinx sphinx_rtd_theme
+#          pip3 install sphinx sphinx_rtd_theme
 
 #      - name: Build docs
 #        uses: ammaraskar/sphinx-action@master
