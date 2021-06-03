@@ -60,6 +60,8 @@ jobs:
           sphinx-build -b html -d ../../test3/doctrees   . ../../test3/html
           git status
           cd ..
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add *
           git status
           git commit -m "Update" || true
