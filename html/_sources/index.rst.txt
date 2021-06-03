@@ -54,3 +54,5 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+
+You can get a PDF copy of this document here: https://github.com/linuxbuff/test3/blob/master/latex/test3.pdf
