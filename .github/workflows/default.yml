@@ -1,18 +1,26 @@
-name: "Pull Request Docs Check"
+name: test
 on: 
   push:
     branches:
       - master
       - main
+  workflow_dispatch:
+
 
 
 jobs:
 
   docs:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v1
-    - uses: linuxbuff/test3@master
-      with:
-        docs-folder: "docs/"
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - uses: linuxbuff/test3@master
+        with:
+          docs-folder: "docs/"
 
