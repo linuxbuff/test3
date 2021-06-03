@@ -5,7 +5,7 @@ Example  Documentation Sample
 Header2
 =======
 
-Sample text
+Sample text 2
 
 
 JSON formatted code
