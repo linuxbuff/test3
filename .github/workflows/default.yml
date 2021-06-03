@@ -1,4 +1,4 @@
-name: test
+name: linuxbuff-build-rtd-pages-and-pdf
 
 # Controls when the action will run. 
 on:
