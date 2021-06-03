@@ -1,0 +1,13 @@
+name: "Pull Request Docs Check"
+on: 
+- pull_request
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: linuxbuff/test3@master
+      with:
+        docs-folder: "docs/"
+
