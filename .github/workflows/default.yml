@@ -47,6 +47,7 @@ jobs:
           python -m pip install sphinx_rtd_theme
           python -m pip install sphinx-click
           python -m pip list
+          pip3 install sphinx sphinx_rtd_theme
 
       - name: Build docs
         uses: ammaraskar/sphinx-action@master
