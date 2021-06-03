@@ -49,10 +49,10 @@ jobs:
           python -m pip list
           pip3 install sphinx sphinx_rtd_theme
 
-      - name: Build docs
-        uses: ammaraskar/sphinx-action@master
-        with:
-          docs-folder: "docs/"
+#      - name: Build docs
+#        uses: ammaraskar/sphinx-action@master
+#        with:
+#          docs-folder: "docs/"
 
 
       - name: git status
