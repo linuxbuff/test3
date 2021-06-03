@@ -36,6 +36,13 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
+      - name: install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install .
+          python -m pip install sphinx
+          python -m pip install sphinx_rtd_theme
+          python -m pip install sphinx-click
 
       - name: Build docs
         uses: ammaraskar/sphinx-action@master
