@@ -26,18 +26,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-
-#     - name: Install Deps
-#       run: pip3 install sphinx sphinx_rtd_theme
 
 
       - name: install dependencies
@@ -47,15 +35,11 @@ jobs:
           python -m pip install sphinx_rtd_theme
           python -m pip install sphinx-click
           python -m pip list
-#          pip3 install sphinx sphinx_rtd_theme
-
-#      - name: Build docs
-#        uses: ammaraskar/sphinx-action@master
-#        with:
-#          docs-folder: "docs/"
 
 
-      - name: git status
+
+
+      - name: build docs
         run: |
           cd docs
           sphinx-build -b html -d ../../test3/doctrees   . ../../test3/html
