@@ -59,5 +59,13 @@ jobs:
           cd docs
           sphinx-build -b html -d ../../test3/doctrees   . ../../test3/html
           git status
+          cd ..
           git add *
           git status
+          git commit -m "Update" || true
+          git push
+
+         
+
+
+
