@@ -52,3 +52,7 @@ jobs:
         uses: ammaraskar/sphinx-action@master
         with:
           docs-folder: "docs/"
+
+
+      - name: git status
+        run: git status
