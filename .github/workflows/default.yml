@@ -43,6 +43,10 @@ jobs:
         run: |
           cd docs
           sphinx-build -b html -d ../../test3/doctrees   . ../../test3/html
+
+
+      - name: push changes
+        run: |
           git status
           cd ..
           git config --local user.email "action@github.com"
