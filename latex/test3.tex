@@ -56,7 +56,7 @@
 \addto\captionsenglish{\renewcommand{\contentsname}{Installation Guide}}
 
 \usepackage{sphinxmessages}
-\setcounter{tocdepth}{1}
+
 
 
 
@@ -78,6 +78,208 @@
 
 
 
+\chapter{Installation Documentation}
+\label{\detokenize{install:installation-documentation}}\label{\detokenize{install::doc}}
+
+\section{Introduction}
+\label{\detokenize{install:introduction}}
+\sphinxAtStartPar
+This section describes the Linux Installation
+
+
+\section{Check Ansible Server}
+\label{\detokenize{install:check-ansible-server}}
+
+\subsection{Log onto Ansible}
+\label{\detokenize{install:log-onto-ansible}}
+\sphinxAtStartPar
+Log onto the Ansible Server as an Admin (user with sudo yum) user and issue command
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+uname \PYGZhy{}a
+cat /etc/redhat\PYGZhy{}release
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+The above will show the current linux version
+
+
+\subsection{Check yum repos}
+\label{\detokenize{install:check-yum-repos}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+yum repolist
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+Ensure that there are no repos with 0 items
+
+
+\subsection{Configure Variables}
+\label{\detokenize{install:configure-variables}}
+\sphinxAtStartPar
+Define additional variables
+
+\sphinxAtStartPar
+There should be an additional variables that need to be defined
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{export} \PYG{n+nv}{DUMMYVAR}\PYG{o}{=}foo
+\end{sphinxVerbatim}
+
+
+\section{Installation via Command Line}
+\label{\detokenize{install:installation-via-command-line}}
+
+\subsection{Run Job}
+\label{\detokenize{install:run-job}}
+\sphinxAtStartPar
+Issue the command, press \sphinxcode{\sphinxupquote{y}} and then \sphinxcode{\sphinxupquote{{[}ENTER{]}}} when prompted
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+sudo yum update
+\end{sphinxVerbatim}
+
+\begin{sphinxadmonition}{warning}{Warning:}
+\sphinxAtStartPar
+This command may take some time
+\end{sphinxadmonition}
+
+
+\subsection{Reboot}
+\label{\detokenize{install:reboot}}
+\sphinxAtStartPar
+If kernel packages were updated, issue the following command:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+sudo reboot
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{Note:}} Confirm server reboots
+
+
+\chapter{Legacy Install Document}
+\label{\detokenize{legacy/legacy-install:legacy-install-document}}\label{\detokenize{legacy/legacy-install::doc}}
+
+\section{Introduction}
+\label{\detokenize{legacy/legacy-install:introduction}}
+\sphinxAtStartPar
+This section describes the Linux Installation
+
+
+\section{Check Compile Server}
+\label{\detokenize{legacy/legacy-install:check-compile-server}}
+
+\subsection{Log onto Compile Server}
+\label{\detokenize{legacy/legacy-install:log-onto-compile-server}}
+\sphinxAtStartPar
+Log onto the Compile Server as an Admin (user with sudo yum) user and issue command
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+uname \PYGZhy{}a
+cat /etc/redhat\PYGZhy{}release
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+The above will show the current linux version
+
+
+\subsection{Check yum repos}
+\label{\detokenize{legacy/legacy-install:check-yum-repos}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+yum repolist
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+Ensure that there are no repos with 0 items
+
+
+\subsection{Configure Variables}
+\label{\detokenize{legacy/legacy-install:configure-variables}}
+\sphinxAtStartPar
+Define additional variables
+
+\sphinxAtStartPar
+There should be an additional variables that need to be defined
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{export} \PYG{n+nv}{DUMMYVAR}\PYG{o}{=}foo
+\end{sphinxVerbatim}
+
+
+\section{Installation via Command Line}
+\label{\detokenize{legacy/legacy-install:installation-via-command-line}}
+
+\subsection{Run Job}
+\label{\detokenize{legacy/legacy-install:run-job}}
+\sphinxAtStartPar
+Issue the command, press \sphinxcode{\sphinxupquote{y}} and then \sphinxcode{\sphinxupquote{{[}ENTER{]}}} when prompted
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+sudo yum update
+\end{sphinxVerbatim}
+
+\begin{sphinxadmonition}{warning}{Warning:}
+\sphinxAtStartPar
+This command may take some time
+\end{sphinxadmonition}
+
+
+\subsection{Reboot}
+\label{\detokenize{legacy/legacy-install:reboot}}
+\sphinxAtStartPar
+If kernel packages were updated, issue the following command:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+sudo reboot
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{Note:}} Confirm server reboots
+
+
+\chapter{Procedures Documentation}
+\label{\detokenize{procedures:procedures-documentation}}\label{\detokenize{procedures::doc}}
+
+\section{Introduction}
+\label{\detokenize{procedures:introduction}}
+\sphinxAtStartPar
+This section describes the a demo Procedure
+
+
+\section{Check Ansible Version}
+\label{\detokenize{procedures:check-ansible-version}}
+
+\subsection{Log onto Ansible}
+\label{\detokenize{procedures:log-onto-ansible}}
+\sphinxAtStartPar
+Log onto the Ansible Server as an Admin user and issue command
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+ansible \PYGZhy{}\PYGZhy{}version
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+The above will show the current Ansible version
+
+
+\section{Update Ansible Inventory}
+\label{\detokenize{procedures:update-ansible-inventory}}
+\sphinxAtStartPar
+The Ansible inventory uses a YAML formatted file, therefore spacing is very important.
+
+
+\subsection{Update Inventory}
+\label{\detokenize{procedures:update-inventory}}
+\sphinxAtStartPar
+Add the following block to the \sphinxcode{\sphinxupquote{/etc/ansible/hosts}} files
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{o}{[}webserver\PYG{o}{]}
+servera.demo.net
+\end{sphinxVerbatim}
+
+
 \chapter{Linux Information}
 \label{\detokenize{index:linux-information}}
 \sphinxAtStartPar
@@ -95,208 +297,6 @@ Please fasten seatbeats, and enjoy the ride.
 \label{\detokenize{index:guide}}
 \sphinxAtStartPar
 Contents:
-
-
-\subsection{Installation Documentation}
-\label{\detokenize{install:installation-documentation}}\label{\detokenize{install::doc}}
-
-\subsubsection{Introduction}
-\label{\detokenize{install:introduction}}
-\sphinxAtStartPar
-This section describes the Linux Installation
-
-
-\subsubsection{Check Ansible Server}
-\label{\detokenize{install:check-ansible-server}}
-
-\paragraph{Log onto Ansible}
-\label{\detokenize{install:log-onto-ansible}}
-\sphinxAtStartPar
-Log onto the Ansible Server as an Admin (user with sudo yum) user and issue command
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-uname \PYGZhy{}a
-cat /etc/redhat\PYGZhy{}release
-\end{sphinxVerbatim}
-
-\sphinxAtStartPar
-The above will show the current linux version
-
-
-\paragraph{Check yum repos}
-\label{\detokenize{install:check-yum-repos}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-yum repolist
-\end{sphinxVerbatim}
-
-\sphinxAtStartPar
-Ensure that there are no repos with 0 items
-
-
-\paragraph{Configure Variables}
-\label{\detokenize{install:configure-variables}}
-\sphinxAtStartPar
-Define additional variables
-
-\sphinxAtStartPar
-There should be an additional variables that need to be defined
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{n+nb}{export} \PYG{n+nv}{DUMMYVAR}\PYG{o}{=}foo
-\end{sphinxVerbatim}
-
-
-\subsubsection{Installation via Command Line}
-\label{\detokenize{install:installation-via-command-line}}
-
-\paragraph{Run Job}
-\label{\detokenize{install:run-job}}
-\sphinxAtStartPar
-Issue the command, press \sphinxcode{\sphinxupquote{y}} and then \sphinxcode{\sphinxupquote{{[}ENTER{]}}} when prompted
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-sudo yum update
-\end{sphinxVerbatim}
-
-\begin{sphinxadmonition}{warning}{Warning:}
-\sphinxAtStartPar
-This command may take some time
-\end{sphinxadmonition}
-
-
-\paragraph{Reboot}
-\label{\detokenize{install:reboot}}
-\sphinxAtStartPar
-If kernel packages were updated, issue the following command:
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-sudo reboot
-\end{sphinxVerbatim}
-
-\sphinxAtStartPar
-\sphinxcode{\sphinxupquote{Note:}} Confirm server reboots
-
-
-\subsection{Legacy Install Document}
-\label{\detokenize{legacy/legacy-install:legacy-install-document}}\label{\detokenize{legacy/legacy-install::doc}}
-
-\subsubsection{Introduction}
-\label{\detokenize{legacy/legacy-install:introduction}}
-\sphinxAtStartPar
-This section describes the Linux Installation
-
-
-\subsubsection{Check Compile Server}
-\label{\detokenize{legacy/legacy-install:check-compile-server}}
-
-\paragraph{Log onto Compile Server}
-\label{\detokenize{legacy/legacy-install:log-onto-compile-server}}
-\sphinxAtStartPar
-Log onto the Compile Server as an Admin (user with sudo yum) user and issue command
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-uname \PYGZhy{}a
-cat /etc/redhat\PYGZhy{}release
-\end{sphinxVerbatim}
-
-\sphinxAtStartPar
-The above will show the current linux version
-
-
-\paragraph{Check yum repos}
-\label{\detokenize{legacy/legacy-install:check-yum-repos}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-yum repolist
-\end{sphinxVerbatim}
-
-\sphinxAtStartPar
-Ensure that there are no repos with 0 items
-
-
-\paragraph{Configure Variables}
-\label{\detokenize{legacy/legacy-install:configure-variables}}
-\sphinxAtStartPar
-Define additional variables
-
-\sphinxAtStartPar
-There should be an additional variables that need to be defined
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{n+nb}{export} \PYG{n+nv}{DUMMYVAR}\PYG{o}{=}foo
-\end{sphinxVerbatim}
-
-
-\subsubsection{Installation via Command Line}
-\label{\detokenize{legacy/legacy-install:installation-via-command-line}}
-
-\paragraph{Run Job}
-\label{\detokenize{legacy/legacy-install:run-job}}
-\sphinxAtStartPar
-Issue the command, press \sphinxcode{\sphinxupquote{y}} and then \sphinxcode{\sphinxupquote{{[}ENTER{]}}} when prompted
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-sudo yum update
-\end{sphinxVerbatim}
-
-\begin{sphinxadmonition}{warning}{Warning:}
-\sphinxAtStartPar
-This command may take some time
-\end{sphinxadmonition}
-
-
-\paragraph{Reboot}
-\label{\detokenize{legacy/legacy-install:reboot}}
-\sphinxAtStartPar
-If kernel packages were updated, issue the following command:
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-sudo reboot
-\end{sphinxVerbatim}
-
-\sphinxAtStartPar
-\sphinxcode{\sphinxupquote{Note:}} Confirm server reboots
-
-
-\subsection{Procedures Documentation}
-\label{\detokenize{procedures:procedures-documentation}}\label{\detokenize{procedures::doc}}
-
-\subsubsection{Introduction}
-\label{\detokenize{procedures:introduction}}
-\sphinxAtStartPar
-This section describes the a demo Procedure
-
-
-\subsubsection{Check Ansible Version}
-\label{\detokenize{procedures:check-ansible-version}}
-
-\paragraph{Log onto Ansible}
-\label{\detokenize{procedures:log-onto-ansible}}
-\sphinxAtStartPar
-Log onto the Ansible Server as an Admin user and issue command
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-ansible \PYGZhy{}\PYGZhy{}version
-\end{sphinxVerbatim}
-
-\sphinxAtStartPar
-The above will show the current Ansible version
-
-
-\subsubsection{Update Ansible Inventory}
-\label{\detokenize{procedures:update-ansible-inventory}}
-\sphinxAtStartPar
-The Ansible inventory uses a YAML formatted file, therefore spacing is very important.
-
-
-\paragraph{Update Inventory}
-\label{\detokenize{procedures:update-inventory}}
-\sphinxAtStartPar
-Add the following block to the \sphinxcode{\sphinxupquote{/etc/ansible/hosts}} files
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{o}{[}webserver\PYG{o}{]}
-servera.demo.net
-\end{sphinxVerbatim}
 
 \begin{sphinxadmonition}{note}{Note:}
 \sphinxAtStartPar
