@@ -19,7 +19,7 @@ Example  Documentation Sample
 
 
 Linux Information
-=================
+-----------------
 
 Once upon a time, before Linux there were some Operating Systems. This was known as a dark age of server operating systems.
 Now there is Linux. 
