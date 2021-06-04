@@ -1,6 +1,6 @@
-===============================
-Procedures Documentation - Demo
-===============================
+========================
+Procedures Documentation
+========================
 
 Introduction
 ============

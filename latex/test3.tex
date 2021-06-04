@@ -77,34 +77,17 @@
 
 
 
-\chapter{Header2}
-\label{\detokenize{index:header2}}
+\chapter{Linux Information}
+\label{\detokenize{index:linux-information}}
 \sphinxAtStartPar
-Sample text
-
-\sphinxAtStartPar
-JSON formatted code
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{p}{\PYGZob{}}
-  \PYG{n+nt}{\PYGZdq{}key\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}value\PYGZdq{}}
-\PYG{p}{\PYGZcb{}}
-\end{sphinxVerbatim}
+Once upon a time, before Linux there were some Operating Systems. This was known as a dark age of server operating systems.
+Now there is Linux.
 
 \sphinxAtStartPar
-python formatted code
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{n}{pygments\PYGZus{}style} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx}\PYG{l+s+s1}{\PYGZsq{}}
-\end{sphinxVerbatim}
+This documentation demo doesn’t do or achieve much, except for illustrating how documentation could look.
 
 \sphinxAtStartPar
-Bash formatted code
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-whoami
-ls \PYGZhy{}lrt
-\end{sphinxVerbatim}
+Please fasten seatbeats, and enjoy the ride.
 
 
 \section{Guide}
@@ -113,8 +96,8 @@ ls \PYGZhy{}lrt
 Contents:
 
 
-\subsection{Installation Documentation \sphinxhyphen{} Demo}
-\label{\detokenize{install:installation-documentation-demo}}\label{\detokenize{install::doc}}
+\subsection{Installation Documentation}
+\label{\detokenize{install:installation-documentation}}\label{\detokenize{install::doc}}
 
 \subsubsection{Introduction}
 \label{\detokenize{install:introduction}}
@@ -193,8 +176,8 @@ sudo reboot
 \sphinxcode{\sphinxupquote{Note:}} Confirm server reboots
 
 
-\subsection{Procedures Documentation \sphinxhyphen{} Demo}
-\label{\detokenize{procedures:procedures-documentation-demo}}\label{\detokenize{procedures::doc}}
+\subsection{Procedures Documentation}
+\label{\detokenize{procedures:procedures-documentation}}\label{\detokenize{procedures::doc}}
 
 \subsubsection{Introduction}
 \label{\detokenize{procedures:introduction}}
@@ -235,10 +218,84 @@ servera.demo.net
 \end{sphinxVerbatim}
 
 
-\subsection{Legacy Install}
-\label{\detokenize{legacy/legacy-install:legacy-install}}\label{\detokenize{legacy/legacy-install::doc}}
+\subsection{Legacy Install Document}
+\label{\detokenize{legacy/legacy-install:legacy-install-document}}\label{\detokenize{legacy/legacy-install::doc}}
+
+\subsubsection{Introduction}
+\label{\detokenize{legacy/legacy-install:introduction}}
 \sphinxAtStartPar
-This is a sample
+This section describes the Linux Installation
+
+
+\subsubsection{Check Compile Server}
+\label{\detokenize{legacy/legacy-install:check-compile-server}}
+
+\paragraph{Log onto Compile Server}
+\label{\detokenize{legacy/legacy-install:log-onto-compile-server}}
+\sphinxAtStartPar
+Log onto the Compile Server as an Admin (user with sudo yum) user and issue command
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+uname \PYGZhy{}a
+cat /etc/redhat\PYGZhy{}release
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+The above will show the current linux version
+
+
+\paragraph{Check yum repos}
+\label{\detokenize{legacy/legacy-install:check-yum-repos}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+yum repolist
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+Ensure that there are no repos with 0 items
+
+
+\paragraph{Configure Variables}
+\label{\detokenize{legacy/legacy-install:configure-variables}}
+\sphinxAtStartPar
+Define additional variables
+
+\sphinxAtStartPar
+There should be an additional variables that need to be defined
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{export} \PYG{n+nv}{DUMMYVAR}\PYG{o}{=}foo
+\end{sphinxVerbatim}
+
+
+\subsubsection{Installation via Command Line}
+\label{\detokenize{legacy/legacy-install:installation-via-command-line}}
+
+\paragraph{Run Job}
+\label{\detokenize{legacy/legacy-install:run-job}}
+\sphinxAtStartPar
+Issue the command, press \sphinxcode{\sphinxupquote{y}} and then \sphinxcode{\sphinxupquote{{[}ENTER{]}}} when prompted
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+sudo yum update
+\end{sphinxVerbatim}
+
+\begin{sphinxadmonition}{warning}{Warning:}
+\sphinxAtStartPar
+This command may take some time
+\end{sphinxadmonition}
+
+
+\paragraph{Reboot}
+\label{\detokenize{legacy/legacy-install:reboot}}
+\sphinxAtStartPar
+If kernel packages were updated, issue the following command:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+sudo reboot
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{Note:}} Confirm server reboots
 
 
 \chapter{Indices and tables}

@@ -1,6 +1,6 @@
-=================================
-Installation Documentation - Demo
-=================================
+==========================
+Installation Documentation
+==========================
 
 
 Introduction

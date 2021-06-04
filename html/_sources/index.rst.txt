@@ -2,34 +2,17 @@ Example  Documentation Sample
 =============================
 
 
-Header2
-=======
+Linux Information
+=================
 
-Sample text 
+Once upon a time, before Linux there were some Operating Systems. This was known as a dark age of server operating systems.
+Now there is Linux. 
 
+This documentation demo doesn't do or achieve much, except for illustrating how documentation could look. 
 
-JSON formatted code
-
-
-.. code-block:: JSON
-
-  {
-    "key": "value"
-  }
-
-python formatted code
-
-.. code-block:: python
-
-  pygments_style = 'sphinx'
+Please fasten seatbeats, and enjoy the ride.
 
 
-Bash formatted code
-
-.. code-block:: bash
-
-  whoami
-  ls -lrt
 
 
 Guide

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Legacy Install &mdash; test3 1 documentation</title>
+  <title>Legacy Install Document &mdash; test3 1 documentation</title>
   
 
   
@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Procedures Documentation - Demo" href="../procedures.html" /> 
+    <link rel="prev" title="Procedures Documentation" href="../procedures.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -91,9 +91,23 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Documentation - Demo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../procedures.html">Procedures Documentation - Demo</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Legacy Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../procedures.html">Procedures Documentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Legacy Install Document</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-compile-server">Check Compile Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#log-onto-compile-server">Log onto Compile Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#check-yum-repos">Check yum repos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configure-variables">Configure Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-via-command-line">Installation via Command Line</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#run-job">Run Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reboot">Reboot</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             
@@ -142,7 +156,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Legacy Install</li>
+      <li>Legacy Install Document</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -161,9 +175,61 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="legacy-install">
-<h1>Legacy Install<a class="headerlink" href="#legacy-install" title="Permalink to this headline">¶</a></h1>
-<p>This is a sample</p>
+  <div class="section" id="legacy-install-document">
+<h1>Legacy Install Document<a class="headerlink" href="#legacy-install-document" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This section describes the Linux Installation</p>
+</div>
+<div class="section" id="check-compile-server">
+<h2>Check Compile Server<a class="headerlink" href="#check-compile-server" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="log-onto-compile-server">
+<h3>Log onto Compile Server<a class="headerlink" href="#log-onto-compile-server" title="Permalink to this headline">¶</a></h3>
+<p>Log onto the Compile Server as an Admin (user with sudo yum) user and issue command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uname -a
+cat /etc/redhat-release
+</pre></div>
+</div>
+<p>The above will show the current linux version</p>
+</div>
+<div class="section" id="check-yum-repos">
+<h3>Check yum repos<a class="headerlink" href="#check-yum-repos" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>yum repolist
+</pre></div>
+</div>
+<p>Ensure that there are no repos with 0 items</p>
+</div>
+<div class="section" id="configure-variables">
+<h3>Configure Variables<a class="headerlink" href="#configure-variables" title="Permalink to this headline">¶</a></h3>
+<p>Define additional variables</p>
+<p>There should be an additional variables that need to be defined</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">DUMMYVAR</span><span class="o">=</span>foo
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="installation-via-command-line">
+<h2>Installation via Command Line<a class="headerlink" href="#installation-via-command-line" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="run-job">
+<h3>Run Job<a class="headerlink" href="#run-job" title="Permalink to this headline">¶</a></h3>
+<p>Issue the command, press <code class="docutils literal notranslate"><span class="pre">y</span></code> and then <code class="docutils literal notranslate"><span class="pre">[ENTER]</span></code> when prompted</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo yum update
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This command may take some time</p>
+</div>
+</div>
+<div class="section" id="reboot">
+<h3>Reboot<a class="headerlink" href="#reboot" title="Permalink to this headline">¶</a></h3>
+<p>If kernel packages were updated, issue the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo reboot
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Note:</span></code> Confirm server reboots</p>
+</div>
+</div>
 </div>
 
 
@@ -172,7 +238,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../procedures.html" class="btn btn-neutral float-left" title="Procedures Documentation - Demo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../procedures.html" class="btn btn-neutral float-left" title="Procedures Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
