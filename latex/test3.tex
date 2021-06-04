@@ -113,10 +113,84 @@ ls \PYGZhy{}lrt
 Contents:
 
 
-\subsection{Install}
-\label{\detokenize{install:install}}\label{\detokenize{install::doc}}
+\subsection{Installation Documentation \sphinxhyphen{} Demo}
+\label{\detokenize{install:installation-documentation-demo}}\label{\detokenize{install::doc}}
+
+\subsubsection{Introduction}
+\label{\detokenize{install:introduction}}
 \sphinxAtStartPar
-This is a sample
+This section describes the Linux Installation
+
+
+\subsubsection{Check Ansible Server}
+\label{\detokenize{install:check-ansible-server}}
+
+\paragraph{Log onto Ansible}
+\label{\detokenize{install:log-onto-ansible}}
+\sphinxAtStartPar
+Log onto the Ansible Server as an Admin (user with sudo yum) user and issue command
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+uname \PYGZhy{}a
+cat /etc/redhat\PYGZhy{}release
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+The above will show the current linux version
+
+
+\paragraph{Check yum repos}
+\label{\detokenize{install:check-yum-repos}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+yum repolist
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+Ensure that there are no repos with 0 items
+
+
+\paragraph{Configure Variables}
+\label{\detokenize{install:configure-variables}}
+\sphinxAtStartPar
+Define additional variables
+
+\sphinxAtStartPar
+There should be an additional variables that need to be defined
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{export} \PYG{n+nv}{DUMMYVAR}\PYG{o}{=}foo
+\end{sphinxVerbatim}
+
+
+\subsubsection{Installation via Command Line}
+\label{\detokenize{install:installation-via-command-line}}
+
+\paragraph{Run Job}
+\label{\detokenize{install:run-job}}
+\sphinxAtStartPar
+Issue the command, press \sphinxcode{\sphinxupquote{y}} and then \sphinxcode{\sphinxupquote{{[}ENTER{]}}} when prompted
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+sudo yum update
+\end{sphinxVerbatim}
+
+\begin{sphinxadmonition}{warning}{Warning:}
+\sphinxAtStartPar
+This command may take some time
+\end{sphinxadmonition}
+
+
+\paragraph{Reboot}
+\label{\detokenize{install:reboot}}
+\sphinxAtStartPar
+If kernel packages were updated, issue the following command:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+sudo reboot
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{Note:}} Confirm server reboots
 
 
 \subsection{Proc}

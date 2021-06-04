@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Install &mdash; test3 1 documentation</title>
+  <title>Installation Documentation - Demo &mdash; test3 1 documentation</title>
   
 
   
@@ -92,7 +92,21 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Install</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation Documentation - Demo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-ansible-server">Check Ansible Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#log-onto-ansible">Log onto Ansible</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#check-yum-repos">Check yum repos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configure-variables">Configure Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-via-command-line">Installation via Command Line</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#run-job">Run Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reboot">Reboot</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="procedures.html">Proc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="legacy/legacy-install.html">Legacy Install</a></li>
 </ul>
@@ -143,7 +157,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Install</li>
+      <li>Installation Documentation - Demo</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -162,9 +176,61 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="install">
-<h1>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h1>
-<p>This is a sample</p>
+  <div class="section" id="installation-documentation-demo">
+<h1>Installation Documentation - Demo<a class="headerlink" href="#installation-documentation-demo" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This section describes the Linux Installation</p>
+</div>
+<div class="section" id="check-ansible-server">
+<h2>Check Ansible Server<a class="headerlink" href="#check-ansible-server" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="log-onto-ansible">
+<h3>Log onto Ansible<a class="headerlink" href="#log-onto-ansible" title="Permalink to this headline">¶</a></h3>
+<p>Log onto the Ansible Server as an Admin (user with sudo yum) user and issue command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uname -a
+cat /etc/redhat-release
+</pre></div>
+</div>
+<p>The above will show the current linux version</p>
+</div>
+<div class="section" id="check-yum-repos">
+<h3>Check yum repos<a class="headerlink" href="#check-yum-repos" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>yum repolist
+</pre></div>
+</div>
+<p>Ensure that there are no repos with 0 items</p>
+</div>
+<div class="section" id="configure-variables">
+<h3>Configure Variables<a class="headerlink" href="#configure-variables" title="Permalink to this headline">¶</a></h3>
+<p>Define additional variables</p>
+<p>There should be an additional variables that need to be defined</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">DUMMYVAR</span><span class="o">=</span>foo
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="installation-via-command-line">
+<h2>Installation via Command Line<a class="headerlink" href="#installation-via-command-line" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="run-job">
+<h3>Run Job<a class="headerlink" href="#run-job" title="Permalink to this headline">¶</a></h3>
+<p>Issue the command, press <code class="docutils literal notranslate"><span class="pre">y</span></code> and then <code class="docutils literal notranslate"><span class="pre">[ENTER]</span></code> when prompted</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo yum update
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This command may take some time</p>
+</div>
+</div>
+<div class="section" id="reboot">
+<h3>Reboot<a class="headerlink" href="#reboot" title="Permalink to this headline">¶</a></h3>
+<p>If kernel packages were updated, issue the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo reboot
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Note:</span></code> Confirm server reboots</p>
+</div>
+</div>
 </div>
 
 
