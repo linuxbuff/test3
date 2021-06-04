@@ -23,11 +23,17 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+   :Caption: Installtion Guide
 
    install
-   procedures
    legacy/legacy-install
 
+
+.. toctree::
+   :maxdepth: 2
+   :Caption: Procedures Guide
+
+   procedures
 
 
 Indices and tables

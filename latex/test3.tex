@@ -53,6 +53,7 @@
 % Set up styles of URL: it should be placed after hyperref.
 \urlstyle{same}
 
+\addto\captionsenglish{\renewcommand{\contentsname}{Installtion Guide}}
 
 \usepackage{sphinxmessages}
 \setcounter{tocdepth}{1}
@@ -176,48 +177,6 @@ sudo reboot
 \sphinxcode{\sphinxupquote{Note:}} Confirm server reboots
 
 
-\subsection{Procedures Documentation}
-\label{\detokenize{procedures:procedures-documentation}}\label{\detokenize{procedures::doc}}
-
-\subsubsection{Introduction}
-\label{\detokenize{procedures:introduction}}
-\sphinxAtStartPar
-This section describes the a demo Procedure
-
-
-\subsubsection{Check Ansible Version}
-\label{\detokenize{procedures:check-ansible-version}}
-
-\paragraph{Log onto Ansible}
-\label{\detokenize{procedures:log-onto-ansible}}
-\sphinxAtStartPar
-Log onto the Ansible Server as an Admin user and issue command
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-ansible \PYGZhy{}\PYGZhy{}version
-\end{sphinxVerbatim}
-
-\sphinxAtStartPar
-The above will show the current Ansible version
-
-
-\subsubsection{Update Ansible Inventory}
-\label{\detokenize{procedures:update-ansible-inventory}}
-\sphinxAtStartPar
-The Ansible inventory uses a YAML formatted file, therefore spacing is very important.
-
-
-\paragraph{Update Inventory}
-\label{\detokenize{procedures:update-inventory}}
-\sphinxAtStartPar
-Add the following block to the \sphinxcode{\sphinxupquote{/etc/ansible/hosts}} files
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{o}{[}webserver\PYG{o}{]}
-servera.demo.net
-\end{sphinxVerbatim}
-
-
 \subsection{Legacy Install Document}
 \label{\detokenize{legacy/legacy-install:legacy-install-document}}\label{\detokenize{legacy/legacy-install::doc}}
 
@@ -296,6 +255,48 @@ sudo reboot
 
 \sphinxAtStartPar
 \sphinxcode{\sphinxupquote{Note:}} Confirm server reboots
+
+
+\subsection{Procedures Documentation}
+\label{\detokenize{procedures:procedures-documentation}}\label{\detokenize{procedures::doc}}
+
+\subsubsection{Introduction}
+\label{\detokenize{procedures:introduction}}
+\sphinxAtStartPar
+This section describes the a demo Procedure
+
+
+\subsubsection{Check Ansible Version}
+\label{\detokenize{procedures:check-ansible-version}}
+
+\paragraph{Log onto Ansible}
+\label{\detokenize{procedures:log-onto-ansible}}
+\sphinxAtStartPar
+Log onto the Ansible Server as an Admin user and issue command
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+ansible \PYGZhy{}\PYGZhy{}version
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+The above will show the current Ansible version
+
+
+\subsubsection{Update Ansible Inventory}
+\label{\detokenize{procedures:update-ansible-inventory}}
+\sphinxAtStartPar
+The Ansible inventory uses a YAML formatted file, therefore spacing is very important.
+
+
+\paragraph{Update Inventory}
+\label{\detokenize{procedures:update-inventory}}
+\sphinxAtStartPar
+Add the following block to the \sphinxcode{\sphinxupquote{/etc/ansible/hosts}} files
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{o}{[}webserver\PYG{o}{]}
+servera.demo.net
+\end{sphinxVerbatim}
 
 
 \chapter{Indices and tables}
