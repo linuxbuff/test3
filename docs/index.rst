@@ -23,7 +23,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-   :Caption: Installtion Guide
+   :Caption: Installation Guide
 
    install
    legacy/legacy-install
@@ -34,14 +34,6 @@ Contents:
    :Caption: Procedures Guide
 
    procedures
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 
 .. note::
