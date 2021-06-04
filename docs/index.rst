@@ -31,27 +31,6 @@ Please fasten seatbeats, and enjoy the ride.
 
 
 
-Guide
-^^^^^
-
-
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-   :Caption: Installation Guide
-
-   install
-   legacy/legacy-install
-
-
-.. toctree::
-   :maxdepth: 2
-   :Caption: Procedures Guide
-
-   procedures
-
-
 .. note::
 
   You can get a PDF copy of this document here: https://linuxbuff.github.io/test3/latex/test3.pdf
