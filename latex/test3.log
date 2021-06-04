@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.4)  4 JUN 2021 12:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.4)  4 JUN 2021 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -794,21 +794,21 @@ Chapter 3.
 ]
 Chapter 4.
 (./test3.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
  (./test3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 310.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
 Package rerunfilecheck Info: File `test3.out' has not changed.
-(rerunfilecheck)             Checksum: 4DCAC5758F8234CB0D957917118E4511;3761.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
+(rerunfilecheck)             Checksum: 1098FD9EA0AB1F44DBCC8674EE6C5D6B;3681.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
- 13761 strings out of 483183
- 196112 string characters out of 5966293
- 468082 words of memory out of 5000000
- 28390 multiletter control sequences out of 15000+600000
+ 13758 strings out of 483183
+ 196075 string characters out of 5966293
+ 468050 words of memory out of 5000000
+ 28388 multiletter control sequences out of 15000+600000
  579704 words of font info for 61 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  38i,11n,51p,251b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -817,10 +817,10 @@ ype1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhv
 bi.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf
 /fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/t1xtt.pfb>
-Output written on test3.pdf (11 pages, 115128 bytes).
+Output written on test3.pdf (11 pages, 114666 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
 

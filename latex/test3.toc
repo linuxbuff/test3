@@ -24,4 +24,3 @@
 \contentsline {section}{\numberline {3.3}Update Ansible Inventory}{5}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Update Inventory}{5}{subsection.3.3.1}%
 \contentsline {chapter}{\numberline {4}Linux Information}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Guide}{7}{section.4.1}%
