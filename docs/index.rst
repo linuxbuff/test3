@@ -1,5 +1,21 @@
+=============================
 Example  Documentation Sample
 =============================
+
+.. toctree::
+   :hidden:
+   :Caption: Installation Guide
+
+   install
+   legacy/legacy-install
+
+
+.. toctree::
+   :hidden:
+   :Caption: Procedures Guide
+
+   procedures
+
 
 
 Linux Information
