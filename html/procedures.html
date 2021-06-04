@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Proc &mdash; test3 1 documentation</title>
+  <title>Introduction &mdash; test3 1 documentation</title>
   
 
   
@@ -93,7 +93,15 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation Documentation - Demo</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Proc</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#check-ansible-version">Check Ansible Version</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#log-onto-ansible">Log onto Ansible</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#update-ansible-inventory">Update Ansible Inventory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#update-inventory">Update Inventory</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="legacy/legacy-install.html">Legacy Install</a></li>
 </ul>
 
@@ -143,7 +151,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Proc</li>
+      <li>Introduction</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -162,9 +170,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="proc">
-<h1>Proc<a class="headerlink" href="#proc" title="Permalink to this headline">¶</a></h1>
-<p>This is a sample</p>
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>This section describes the a demo Procedure</p>
+</div>
+<div class="section" id="check-ansible-version">
+<h1>Check Ansible Version<a class="headerlink" href="#check-ansible-version" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="log-onto-ansible">
+<h2>Log onto Ansible<a class="headerlink" href="#log-onto-ansible" title="Permalink to this headline">¶</a></h2>
+<p>Log onto the Ansible Server as an Admin user and issue command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ansible --version
+</pre></div>
+</div>
+<p>The above will show the current Ansible version</p>
+</div>
+</div>
+<div class="section" id="update-ansible-inventory">
+<h1>Update Ansible Inventory<a class="headerlink" href="#update-ansible-inventory" title="Permalink to this headline">¶</a></h1>
+<p>The Ansible inventory uses a YAML formatted file, therefore spacing is very important.</p>
+<div class="section" id="update-inventory">
+<h2>Update Inventory<a class="headerlink" href="#update-inventory" title="Permalink to this headline">¶</a></h2>
+<p>Add the following block to the <code class="docutils literal notranslate"><span class="pre">/etc/ansible/hosts</span></code> files</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>webserver<span class="o">]</span>
+servera.demo.net
+</pre></div>
+</div>
+</div>
 </div>
 
 

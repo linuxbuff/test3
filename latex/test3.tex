@@ -193,10 +193,43 @@ sudo reboot
 \sphinxcode{\sphinxupquote{Note:}} Confirm server reboots
 
 
-\subsection{Proc}
-\label{\detokenize{procedures:proc}}\label{\detokenize{procedures::doc}}
+\subsection{Introduction}
+\label{\detokenize{procedures:introduction}}\label{\detokenize{procedures::doc}}
 \sphinxAtStartPar
-This is a sample
+This section describes the a demo Procedure
+
+
+\subsection{Check Ansible Version}
+\label{\detokenize{procedures:check-ansible-version}}
+
+\subsubsection{Log onto Ansible}
+\label{\detokenize{procedures:log-onto-ansible}}
+\sphinxAtStartPar
+Log onto the Ansible Server as an Admin user and issue command
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+ansible \PYGZhy{}\PYGZhy{}version
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+The above will show the current Ansible version
+
+
+\subsection{Update Ansible Inventory}
+\label{\detokenize{procedures:update-ansible-inventory}}
+\sphinxAtStartPar
+The Ansible inventory uses a YAML formatted file, therefore spacing is very important.
+
+
+\subsubsection{Update Inventory}
+\label{\detokenize{procedures:update-inventory}}
+\sphinxAtStartPar
+Add the following block to the \sphinxcode{\sphinxupquote{/etc/ansible/hosts}} files
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{o}{[}webserver\PYG{o}{]}
+servera.demo.net
+\end{sphinxVerbatim}
 
 
 \subsection{Legacy Install}

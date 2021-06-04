@@ -10,6 +10,10 @@
 \contentsline {subsubsection}{Installation via Command Line}{2}{subsubsection*.8}%
 \contentsline {paragraph}{Run Job}{2}{paragraph*.9}%
 \contentsline {paragraph}{Reboot}{2}{paragraph*.10}%
-\contentsline {subsection}{\numberline {1.1.2}Proc}{2}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Legacy Install}{2}{subsection.1.1.3}%
-\contentsline {chapter}{\numberline {2}Indices and tables}{3}{chapter.2}%
+\contentsline {subsection}{\numberline {1.1.2}Introduction}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Check Ansible Version}{2}{subsection.1.1.3}%
+\contentsline {subsubsection}{Log onto Ansible}{2}{subsubsection*.11}%
+\contentsline {subsection}{\numberline {1.1.4}Update Ansible Inventory}{3}{subsection.1.1.4}%
+\contentsline {subsubsection}{Update Inventory}{3}{subsubsection*.12}%
+\contentsline {subsection}{\numberline {1.1.5}Legacy Install}{3}{subsection.1.1.5}%
+\contentsline {chapter}{\numberline {2}Indices and tables}{5}{chapter.2}%
