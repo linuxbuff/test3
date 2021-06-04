@@ -25,4 +25,3 @@
 \contentsline {paragraph}{Log onto Ansible}{4}{paragraph*.21}%
 \contentsline {subsubsection}{Update Ansible Inventory}{4}{subsubsection*.22}%
 \contentsline {paragraph}{Update Inventory}{4}{paragraph*.23}%
-\contentsline {chapter}{\numberline {2}Indices and tables}{5}{chapter.2}%
