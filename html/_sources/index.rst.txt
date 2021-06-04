@@ -39,7 +39,7 @@ Guide
 Contents:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    install
    procedures
@@ -55,4 +55,6 @@ Indices and tables
 * :ref:`search`
 
 
-You can get a PDF copy of this document here: https://linuxbuff.github.io/test3/latex/test3.pdf
+.. note::
+
+  You can get a PDF copy of this document here: https://linuxbuff.github.io/test3/latex/test3.pdf

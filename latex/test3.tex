@@ -55,7 +55,7 @@
 
 
 \usepackage{sphinxmessages}
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 
 
 
@@ -193,16 +193,19 @@ sudo reboot
 \sphinxcode{\sphinxupquote{Note:}} Confirm server reboots
 
 
-\subsection{Introduction}
-\label{\detokenize{procedures:introduction}}\label{\detokenize{procedures::doc}}
+\subsection{Procedures Documentation \sphinxhyphen{} Demo}
+\label{\detokenize{procedures:procedures-documentation-demo}}\label{\detokenize{procedures::doc}}
+
+\subsubsection{Introduction}
+\label{\detokenize{procedures:introduction}}
 \sphinxAtStartPar
 This section describes the a demo Procedure
 
 
-\subsection{Check Ansible Version}
+\subsubsection{Check Ansible Version}
 \label{\detokenize{procedures:check-ansible-version}}
 
-\subsubsection{Log onto Ansible}
+\paragraph{Log onto Ansible}
 \label{\detokenize{procedures:log-onto-ansible}}
 \sphinxAtStartPar
 Log onto the Ansible Server as an Admin user and issue command
@@ -215,13 +218,13 @@ ansible \PYGZhy{}\PYGZhy{}version
 The above will show the current Ansible version
 
 
-\subsection{Update Ansible Inventory}
+\subsubsection{Update Ansible Inventory}
 \label{\detokenize{procedures:update-ansible-inventory}}
 \sphinxAtStartPar
 The Ansible inventory uses a YAML formatted file, therefore spacing is very important.
 
 
-\subsubsection{Update Inventory}
+\paragraph{Update Inventory}
 \label{\detokenize{procedures:update-inventory}}
 \sphinxAtStartPar
 Add the following block to the \sphinxcode{\sphinxupquote{/etc/ansible/hosts}} files
@@ -254,8 +257,10 @@ This is a sample
 
 \end{itemize}
 
+\begin{sphinxadmonition}{note}{Note:}
 \sphinxAtStartPar
 You can get a PDF copy of this document here: \sphinxurl{https://linuxbuff.github.io/test3/latex/test3.pdf}
+\end{sphinxadmonition}
 
 
 
